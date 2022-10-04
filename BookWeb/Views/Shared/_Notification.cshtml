@@ -1,4 +1,4 @@
-﻿//Popups create
+﻿//Popups when the user create a new book
 @if (TempData["success"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script> 
@@ -7,7 +7,7 @@
         toastr.success('@TempData["success"]');
     </script>
 }
-//Popups edit
+//Popups when the user edit name+order of book
 @if (TempData["update"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -16,7 +16,7 @@
         toastr.success('@TempData["update"]');
     </script>
 }
-//Popups delete
+//Popups when user delete a book
 @if (TempData["remove"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
