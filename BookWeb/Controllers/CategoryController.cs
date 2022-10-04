@@ -13,7 +13,7 @@ namespace BookWeb.Controllers
         {
             _db = db;
         }
-
+        ////////////controller Index///////////////////////////////
         public IActionResult Index()
         {
             IEnumerable<Category> objCategoryList = _db.Categories;
@@ -39,12 +39,12 @@ namespace BookWeb.Controllers
             {
                 _db.Categories.Add(obj);
                 _db.SaveChanges();
-                TempData["success"] = "Create successfully";
+                TempData["success"] = "Created successfully!";
                 return RedirectToAction("Index");
             }
             return View(obj);
         }
-        //edit && edit...../////////////////////////////////////////////////////////////////
+        //edit && edit.....//////////////////////////////EIDT///////////////////////////////////
         //GET
         public IActionResult Edit(int? id)
         {
@@ -80,6 +80,7 @@ namespace BookWeb.Controllers
             {
                 _db.Categories.Update(obj);
                 _db.SaveChanges();
+                TempData["update"] = "Updated successfully!";
                 return RedirectToAction("Index");
             }
             return View(obj);
@@ -118,7 +119,7 @@ namespace BookWeb.Controllers
             }
             _db.Categories.Remove(obj);
             _db.SaveChanges();
-            TempData["success"] = "Deleted successfully";
+            TempData["remove"] = "Deleted successfully!";
             return RedirectToAction("Index");
         }
     }

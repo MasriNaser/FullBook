@@ -1,4 +1,5 @@
-﻿@if (TempData["success"] != null)
+﻿//Popups create
+@if (TempData["success"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
@@ -6,11 +7,21 @@
         toastr.success('@TempData["success"]');
     </script>
 }
-@if (TempData["error"] != null)
+//Popups edit
+@if (TempData["update"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script type="text/javascript">
-        toastr.error('@TempData["error"]')
+        toastr.success('@TempData["update"]');
+    </script>
+}
+//Popups delete
+@if (TempData["remove"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.error('@TempData["remove"]')
     </script>
 }
