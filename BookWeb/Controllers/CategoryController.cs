@@ -2,6 +2,7 @@
 using BookWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 
+//this is the controller for categories.
 namespace BookWeb.Controllers
 {
     public class CategoryController : Controller
@@ -43,7 +44,7 @@ namespace BookWeb.Controllers
             }
             return View(obj);
         }
-        //edit && edi...../////////////////////////////////////////////////////////////////
+        //edit && edit...../////////////////////////////////////////////////////////////////
         //GET
         public IActionResult Edit(int? id)
         {
@@ -73,7 +74,7 @@ namespace BookWeb.Controllers
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
-                ModelState.AddModelError("CustomError", "THe Display Order cannot exatly match the name.");
+                ModelState.AddModelError("CustomError", "The Display Order cannot exatly match the name.");
             }
             if (ModelState.IsValid)
             {
