@@ -10,9 +10,11 @@ namespace BookWeb.Models
         //add properties
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
-        [DisplayName("Display Order")]
+        public string? Name { get; set; }
+
+        [Required]
         [Range(1,100,ErrorMessage ="Display Order must be 1 to 100 only.")]
+        [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
 
