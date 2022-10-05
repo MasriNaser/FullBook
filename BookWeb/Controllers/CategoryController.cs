@@ -44,7 +44,7 @@ namespace BookWeb.Controllers
             }
             return View(obj);
         }
-        //edit && edit.....//////////////////////////////EIDT///////////////////////////////////
+        //edit && edit.....//////////////////////////////Edit///////////////////////////////////
         //GET
         public IActionResult Edit(int? id)
         {
@@ -65,6 +65,8 @@ namespace BookWeb.Controllers
         }
         //POST
 
+
+        
         [HttpPost]
         //To use Http POST request.
         //The ValidateAntiForgeryToken attribute is used to prevent cross-site request forgery attacks
