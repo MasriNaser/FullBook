@@ -3,13 +3,21 @@
 <form method="post">
     <div class="border p-3 mt-4">
         <div class="row pb-2">
+<<<<<<< HEAD
             <h2 class="text-primary">Create a Book</h2>
             <hr />
+=======
+            <h2 class="text-primary">Create Category</h2>
+>>>>>>> 5afdab9e48882f3ba95fe59b98e2758b408f090d
         </div>
         <div asp-validation-summary="All"></div>
         <div class="mb-3">
             <label asp-for="Name"></label>
+<<<<<<< HEAD
             <input autofocus asp-for="Name" class="form-control" />
+=======
+            <input asp-for="Name" autofocus class="form-control" />
+>>>>>>> 5afdab9e48882f3ba95fe59b98e2758b408f090d
             <span asp-validation-for="Name" class="text-bg-danger"></span>
         </div>
         <div class="mb-3">
@@ -21,9 +29,17 @@
         <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to list</a>
     </div>
 </form>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5afdab9e48882f3ba95fe59b98e2758b408f090d
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial"/>
     }
+<<<<<<< HEAD
 }
+=======
+    }
+
+>>>>>>> 5afdab9e48882f3ba95fe59b98e2758b408f090d
