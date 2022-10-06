@@ -13,7 +13,7 @@ namespace BookWeb.Controllers
         {
             _db = db;
         }
-        ////////////controller Index///////////////////////////////
+        ////////////Controller Index///////////////////////////////
         public IActionResult Index()
         {
             IEnumerable<Category> objCategoryList = _db.Categories;

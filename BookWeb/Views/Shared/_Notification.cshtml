@@ -1,4 +1,4 @@
-﻿//Popups create
+﻿@*Popups create*@
 @if (TempData["success"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script> 
@@ -7,7 +7,7 @@
         toastr.success('@TempData["success"]');
     </script>
 }
-//Popups edit
+@*Popups edit*@
 @if (TempData["update"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -16,7 +16,7 @@
         toastr.success('@TempData["update"]');
     </script>
 }
-//Popups delete
+@*Popups delete*@
 @if (TempData["remove"] != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
