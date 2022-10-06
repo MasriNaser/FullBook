@@ -1,7 +1,6 @@
 ﻿using BookWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
 namespace BookWeb.Controllers
 {
     public class HomeController : Controller

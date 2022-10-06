@@ -1,8 +1,4 @@
-﻿using BookWeb.Data;
-using BookWeb.Models;
-using Microsoft.AspNetCore.Mvc;
-
-//this is the controller for categories.
+﻿//This is the controller for categories.
 namespace BookWeb.Controllers
 {
     public class CategoryController : Controller

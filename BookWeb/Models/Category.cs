@@ -1,5 +1,4 @@
 ﻿namespace BookWeb.Models;
-
 public class Category
 {
     //add annotation for validation
